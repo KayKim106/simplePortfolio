@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$(".button").on("click",function(){
+    			var value = $(this).attr("data-filter");
+    			if(value =="all"){
+    				$(".filter").show("1000");
+    			}
+    			else{
+    				$(".filter").not("."+value).hide("1000");
+    				$(".filter").filter("."+value).show("1000");
+    			}
+    			//Adding active class
+    			$("ul .button").on("click",function(){
+    				$(this).addClass("active").sibilings().removeClass('active');
+    			})
+    		})
+    	});
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li class="button active" data-filter="all">All</li>
+            <li class="button" data-filter="htmlcss">HTML / CSS</li>
+            <li class="button" data-filter="javascript">Javascript</li>
+            <li class="button" data-filter="jqeury">JQuery</li>
+            <li class="button" data-filter="nodejs">Nodejs</li>
+            <li class="button" data-filter="mysql">MySQL</li>
+            <li class="button" data-filter="express">Express</li>
+            <li class="button" data-filter="handlebars">Handlebars</li>
+            <li class="button" data-filter="website">Website</li>
+            <li class="button" data-filter="react">React</li>
+            <div style="clear:both" ;></div>
+        </ul>
+        <div class="box filter website">Website</div>
+        <div class="box filter htmlcss">HTML/CSS</div>
+        <div class="box filter javascript">Javascript</div>
+        <div class="box filter jqeury">JQuery</div>
+        <div class="box filter nodejs">Nodejs</div>
+        <div class="box filter mysql">MySQL</div>
+        <div class="box filter express">Express</div>
+        <div class="box filter handlebars">Handlebars</div>
+        <div class="box filter react">React</div>
+        <div class="box filter website">Website</div>
+        <div class="box filter htmlcss">HTML/CSS</div>
+        <div class="box filter javascript">Javascript</div>
+        <div class="box filter jqeury">JQuery</div>
+        <div class="box filter nodejs">Nodejs</div>
+        <div class="box filter mysql">MySQL</div>
+        <div class="box filter express">Express</div>
+        <div class="box filter handlebars">Handlebars</div>
+        <div class="box filter react">React</div>
+        <div class="box filter website">Website</div>
+        <div class="box filter htmlcss">HTML/CSS</div>
+        <div class="box filter javascript">Javascript</div>
+        <div class="box filter jqeury">JQuery</div>
+        <div class="box filter nodejs">Nodejs</div>
+        <div class="box filter mysql">MySQL</div>
+        <div class="box filter express">Express</div>
+        <div class="box filter handlebars">Handlebars</div>
+        <div class="box filter react">React</div>
+        <div class="box filter express">Express</div>
+    </div>
+</body>
+
+</html>

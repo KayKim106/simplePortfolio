@@ -1,0 +1,83 @@
+body{
+	margin:0;
+	padding:0;
+	background:#262626;
+}
+
+ul{
+	padding:0;
+	position:relative;
+	width:100%;
+	margin:10px 10px 30px;
+}
+ul li{
+	list-style:none;
+	float:left;
+	padding:10px 20px;
+	color:white;
+	border:1px solid white;
+	margin-right:15px;
+	font-family:arial;
+	text-transform:uppercase;
+}
+ul li:hover, .active{
+	background:#fff;
+	color:black;
+}
+.box:hover{
+	opacity:0.6;
+}
+
+.container{
+	padding:30px 30px;
+	position:relative;
+	box-sizing: border-box;
+
+}
+.container .box{
+	width:23%;
+	height:100px;
+	text-align:center;
+	line-height: 100px;
+	color:rgba(255,255,255,0.5);
+	font-family:arial;
+	font-size:2em;
+	box-sizing: border-box;
+	border:1px solid black;
+	margin:10px;
+	float:left;
+	margin-right:10px;
+
+}
+
+.all{
+	background:#55efc4;
+}
+.website{
+	background:#0984e3;
+}
+.htmlcss{
+background:#74b9ff;
+}
+.javascript{
+	background:#fab1a0;
+}
+.jqeury{
+background:#fdcb6e;
+}
+.nodejs{
+	background:#a29bfe;
+}
+.mysql{
+background:#00b894;
+}
+.express{
+	background:#55efc4;
+}
+.handlebars{
+background:#e84393;
+}
+.react{
+background:#e84393;
+}
+
